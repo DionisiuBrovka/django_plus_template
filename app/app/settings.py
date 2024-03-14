@@ -12,6 +12,7 @@ ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "localhost").split(" ")
 
 
 INSTALLED_APPS = [
+    'router',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
