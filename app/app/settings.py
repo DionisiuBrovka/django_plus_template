@@ -1,9 +1,10 @@
 import os
 from pathlib import Path
+from django.core.management.utils import get_random_secret_key
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = get_random_secret_key()
 
 DEBUG = os.environ.get("DEBUG")
 
@@ -73,7 +74,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru'
 
-TIME_ZONE = 'Eupore/Minsk'
+TIME_ZONE = 'Europe/Minsk'
 
 USE_I18N = True
 
